@@ -1,0 +1,520 @@
+2023.02.14 22:45:26 INFO  tracing is disabled for protocol LSP, to enable tracing of incoming and outgoing JSON messages create an empty file at d:\OneDrive - Universidad Rafael Landivar\PRIMER CICLO 2023\INGENIERÍA DE SOFTWARE II\AkkaAPI\.metals\lsp.trace.json or C:\Users\andre\AppData\Local\scalameta\metals\cache\lsp.trace.json
+feb 14, 2023 10:45:57 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+GRAVE: Internal error: java.lang.IllegalArgumentException: Illegal character in path at index 19: file:///d:/OneDrive - Universidad Rafael Landivar/PRIMER CICLO 2023/INGENIER%C3%8DA DE SOFTWARE II/AkkaAPI
+java.util.concurrent.CompletionException: java.lang.IllegalArgumentException: Illegal character in path at index 19: file:///d:/OneDrive - Universidad Rafael Landivar/PRIMER CICLO 2023/INGENIER%C3%8DA DE SOFTWARE II/AkkaAPI
+	at java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:292)
+	at java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:308)
+	at java.util.concurrent.CompletableFuture.uniAccept(CompletableFuture.java:661)
+	at java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:646)
+	at java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:488)
+	at java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:1990)
+	at scala.concurrent.java8.FuturesConvertersImpl$CF.apply(FutureConvertersImpl.scala:29)
+	at scala.concurrent.java8.FuturesConvertersImpl$CF.apply(FutureConvertersImpl.scala:26)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:484)
+	at scala.concurrent.ExecutionContext$parasitic$.execute(ExecutionContext.scala:222)
+	at scala.concurrent.impl.Promise$Transformation.submitWithValue(Promise.scala:429)
+	at scala.concurrent.impl.Promise$DefaultPromise.submitWithValue(Promise.scala:338)
+	at scala.concurrent.impl.Promise$DefaultPromise.tryComplete0(Promise.scala:285)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:504)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+Caused by: java.lang.IllegalArgumentException: Illegal character in path at index 19: file:///d:/OneDrive - Universidad Rafael Landivar/PRIMER CICLO 2023/INGENIER%C3%8DA DE SOFTWARE II/AkkaAPI
+	at java.net.URI.create(URI.java:852)
+	at scala.meta.internal.mtags.MtagsEnrichments$XtensionStringMtags.toAbsolutePath(MtagsEnrichments.scala:158)
+	at scala.meta.internal.metals.MetalsEnrichments$XtensionString.toAbsolutePath(MetalsEnrichments.scala:609)
+	at scala.meta.internal.metals.MetalsEnrichments$XtensionString.toAbsolutePath(MetalsEnrichments.scala:606)
+	at scala.meta.internal.metals.MetalsLanguageServer.updateWorkspaceDirectory(MetalsLanguageServer.scala:365)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$initialize$2(MetalsLanguageServer.scala:879)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:678)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	... 3 more
+Caused by: java.net.URISyntaxException: Illegal character in path at index 19: file:///d:/OneDrive - Universidad Rafael Landivar/PRIMER CICLO 2023/INGENIER%C3%8DA DE SOFTWARE II/AkkaAPI
+	at java.net.URI$Parser.fail(URI.java:2845)
+	at java.net.URI$Parser.checkChars(URI.java:3018)
+	at java.net.URI$Parser.parseHierarchical(URI.java:3102)
+	at java.net.URI$Parser.parse(URI.java:3050)
+	at java.net.URI.<init>(URI.java:588)
+	at java.net.URI.create(URI.java:850)
+	... 10 more
+
+2023.02.14 22:46:19 INFO  tracing is disabled for protocol LSP, to enable tracing of incoming and outgoing JSON messages create an empty file at d:\OneDrive - Universidad Rafael Landivar\PRIMER CICLO 2023\INGENIERÍA DE SOFTWARE II\AkkaAPI\.metals\lsp.trace.json or C:\Users\andre\AppData\Local\scalameta\metals\cache\lsp.trace.json
+feb 14, 2023 10:46:33 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+GRAVE: Internal error: java.lang.IllegalArgumentException: Illegal character in path at index 19: file:///d:/OneDrive - Universidad Rafael Landivar/PRIMER CICLO 2023/INGENIER%C3%8DA DE SOFTWARE II/AkkaAPI
+java.util.concurrent.CompletionException: java.lang.IllegalArgumentException: Illegal character in path at index 19: file:///d:/OneDrive - Universidad Rafael Landivar/PRIMER CICLO 2023/INGENIER%C3%8DA DE SOFTWARE II/AkkaAPI
+	at java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:292)
+	at java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:308)
+	at java.util.concurrent.CompletableFuture.uniAccept(CompletableFuture.java:661)
+	at java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:646)
+	at java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:488)
+	at java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:1990)
+	at scala.concurrent.java8.FuturesConvertersImpl$CF.apply(FutureConvertersImpl.scala:29)
+	at scala.concurrent.java8.FuturesConvertersImpl$CF.apply(FutureConvertersImpl.scala:26)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:484)
+	at scala.concurrent.ExecutionContext$parasitic$.execute(ExecutionContext.scala:222)
+	at scala.concurrent.impl.Promise$Transformation.submitWithValue(Promise.scala:429)
+	at scala.concurrent.impl.Promise$DefaultPromise.submitWithValue(Promise.scala:338)
+	at scala.concurrent.impl.Promise$DefaultPromise.tryComplete0(Promise.scala:285)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:504)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+Caused by: java.lang.IllegalArgumentException: Illegal character in path at index 19: file:///d:/OneDrive - Universidad Rafael Landivar/PRIMER CICLO 2023/INGENIER%C3%8DA DE SOFTWARE II/AkkaAPI
+	at java.net.URI.create(URI.java:852)
+	at scala.meta.internal.mtags.MtagsEnrichments$XtensionStringMtags.toAbsolutePath(MtagsEnrichments.scala:158)
+	at scala.meta.internal.metals.MetalsEnrichments$XtensionString.toAbsolutePath(MetalsEnrichments.scala:609)
+	at scala.meta.internal.metals.MetalsEnrichments$XtensionString.toAbsolutePath(MetalsEnrichments.scala:606)
+	at scala.meta.internal.metals.MetalsLanguageServer.updateWorkspaceDirectory(MetalsLanguageServer.scala:365)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$initialize$2(MetalsLanguageServer.scala:879)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:678)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	... 3 more
+Caused by: java.net.URISyntaxException: Illegal character in path at index 19: file:///d:/OneDrive - Universidad Rafael Landivar/PRIMER CICLO 2023/INGENIER%C3%8DA DE SOFTWARE II/AkkaAPI
+	at java.net.URI$Parser.fail(URI.java:2845)
+	at java.net.URI$Parser.checkChars(URI.java:3018)
+	at java.net.URI$Parser.parseHierarchical(URI.java:3102)
+	at java.net.URI$Parser.parse(URI.java:3050)
+	at java.net.URI.<init>(URI.java:588)
+	at java.net.URI.create(URI.java:850)
+	... 10 more
+
+2023.02.14 22:46:54 INFO  tracing is disabled for protocol LSP, to enable tracing of incoming and outgoing JSON messages create an empty file at d:\OneDrive - Universidad Rafael Landivar\PRIMER CICLO 2023\INGENIERÍA DE SOFTWARE II\AkkaAPI\.metals\lsp.trace.json or C:\Users\andre\AppData\Local\scalameta\metals\cache\lsp.trace.json
+feb 14, 2023 10:47:10 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+GRAVE: Internal error: java.lang.IllegalArgumentException: Illegal character in path at index 19: file:///d:/OneDrive - Universidad Rafael Landivar/PRIMER CICLO 2023/INGENIER%C3%8DA DE SOFTWARE II/AkkaAPI
+java.util.concurrent.CompletionException: java.lang.IllegalArgumentException: Illegal character in path at index 19: file:///d:/OneDrive - Universidad Rafael Landivar/PRIMER CICLO 2023/INGENIER%C3%8DA DE SOFTWARE II/AkkaAPI
+	at java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:292)
+	at java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:308)
+	at java.util.concurrent.CompletableFuture.uniAccept(CompletableFuture.java:661)
+	at java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:646)
+	at java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:488)
+	at java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:1990)
+	at scala.concurrent.java8.FuturesConvertersImpl$CF.apply(FutureConvertersImpl.scala:29)
+	at scala.concurrent.java8.FuturesConvertersImpl$CF.apply(FutureConvertersImpl.scala:26)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:484)
+	at scala.concurrent.ExecutionContext$parasitic$.execute(ExecutionContext.scala:222)
+	at scala.concurrent.impl.Promise$Transformation.submitWithValue(Promise.scala:429)
+	at scala.concurrent.impl.Promise$DefaultPromise.submitWithValue(Promise.scala:338)
+	at scala.concurrent.impl.Promise$DefaultPromise.tryComplete0(Promise.scala:285)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:504)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+Caused by: java.lang.IllegalArgumentException: Illegal character in path at index 19: file:///d:/OneDrive - Universidad Rafael Landivar/PRIMER CICLO 2023/INGENIER%C3%8DA DE SOFTWARE II/AkkaAPI
+	at java.net.URI.create(URI.java:852)
+	at scala.meta.internal.mtags.MtagsEnrichments$XtensionStringMtags.toAbsolutePath(MtagsEnrichments.scala:158)
+	at scala.meta.internal.metals.MetalsEnrichments$XtensionString.toAbsolutePath(MetalsEnrichments.scala:609)
+	at scala.meta.internal.metals.MetalsEnrichments$XtensionString.toAbsolutePath(MetalsEnrichments.scala:606)
+	at scala.meta.internal.metals.MetalsLanguageServer.updateWorkspaceDirectory(MetalsLanguageServer.scala:365)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$initialize$2(MetalsLanguageServer.scala:879)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:678)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	... 3 more
+Caused by: java.net.URISyntaxException: Illegal character in path at index 19: file:///d:/OneDrive - Universidad Rafael Landivar/PRIMER CICLO 2023/INGENIER%C3%8DA DE SOFTWARE II/AkkaAPI
+	at java.net.URI$Parser.fail(URI.java:2845)
+	at java.net.URI$Parser.checkChars(URI.java:3018)
+	at java.net.URI$Parser.parseHierarchical(URI.java:3102)
+	at java.net.URI$Parser.parse(URI.java:3050)
+	at java.net.URI.<init>(URI.java:588)
+	at java.net.URI.create(URI.java:850)
+	... 10 more
+
+2023.02.14 22:47:35 INFO  tracing is disabled for protocol LSP, to enable tracing of incoming and outgoing JSON messages create an empty file at d:\OneDrive - Universidad Rafael Landivar\PRIMER CICLO 2023\INGENIERÍA DE SOFTWARE II\AkkaAPI\.metals\lsp.trace.json or C:\Users\andre\AppData\Local\scalameta\metals\cache\lsp.trace.json
+feb 14, 2023 10:47:48 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+GRAVE: Internal error: java.lang.IllegalArgumentException: Illegal character in path at index 19: file:///d:/OneDrive - Universidad Rafael Landivar/PRIMER CICLO 2023/INGENIER%C3%8DA DE SOFTWARE II/AkkaAPI
+java.util.concurrent.CompletionException: java.lang.IllegalArgumentException: Illegal character in path at index 19: file:///d:/OneDrive - Universidad Rafael Landivar/PRIMER CICLO 2023/INGENIER%C3%8DA DE SOFTWARE II/AkkaAPI
+	at java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:292)
+	at java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:308)
+	at java.util.concurrent.CompletableFuture.uniAccept(CompletableFuture.java:661)
+	at java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:646)
+	at java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:488)
+	at java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:1990)
+	at scala.concurrent.java8.FuturesConvertersImpl$CF.apply(FutureConvertersImpl.scala:29)
+	at scala.concurrent.java8.FuturesConvertersImpl$CF.apply(FutureConvertersImpl.scala:26)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:484)
+	at scala.concurrent.ExecutionContext$parasitic$.execute(ExecutionContext.scala:222)
+	at scala.concurrent.impl.Promise$Transformation.submitWithValue(Promise.scala:429)
+	at scala.concurrent.impl.Promise$DefaultPromise.submitWithValue(Promise.scala:338)
+	at scala.concurrent.impl.Promise$DefaultPromise.tryComplete0(Promise.scala:285)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:504)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+Caused by: java.lang.IllegalArgumentException: Illegal character in path at index 19: file:///d:/OneDrive - Universidad Rafael Landivar/PRIMER CICLO 2023/INGENIER%C3%8DA DE SOFTWARE II/AkkaAPI
+	at java.net.URI.create(URI.java:852)
+	at scala.meta.internal.mtags.MtagsEnrichments$XtensionStringMtags.toAbsolutePath(MtagsEnrichments.scala:158)
+	at scala.meta.internal.metals.MetalsEnrichments$XtensionString.toAbsolutePath(MetalsEnrichments.scala:609)
+	at scala.meta.internal.metals.MetalsEnrichments$XtensionString.toAbsolutePath(MetalsEnrichments.scala:606)
+	at scala.meta.internal.metals.MetalsLanguageServer.updateWorkspaceDirectory(MetalsLanguageServer.scala:365)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$initialize$2(MetalsLanguageServer.scala:879)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:678)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	... 3 more
+Caused by: java.net.URISyntaxException: Illegal character in path at index 19: file:///d:/OneDrive - Universidad Rafael Landivar/PRIMER CICLO 2023/INGENIER%C3%8DA DE SOFTWARE II/AkkaAPI
+	at java.net.URI$Parser.fail(URI.java:2845)
+	at java.net.URI$Parser.checkChars(URI.java:3018)
+	at java.net.URI$Parser.parseHierarchical(URI.java:3102)
+	at java.net.URI$Parser.parse(URI.java:3050)
+	at java.net.URI.<init>(URI.java:588)
+	at java.net.URI.create(URI.java:850)
+	... 10 more
+
+2023.02.14 22:48:12 INFO  tracing is disabled for protocol LSP, to enable tracing of incoming and outgoing JSON messages create an empty file at d:\OneDrive - Universidad Rafael Landivar\PRIMER CICLO 2023\INGENIERÍA DE SOFTWARE II\AkkaAPI\.metals\lsp.trace.json or C:\Users\andre\AppData\Local\scalameta\metals\cache\lsp.trace.json
+feb 14, 2023 10:48:29 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+GRAVE: Internal error: java.lang.IllegalArgumentException: Illegal character in path at index 19: file:///d:/OneDrive - Universidad Rafael Landivar/PRIMER CICLO 2023/INGENIER%C3%8DA DE SOFTWARE II/AkkaAPI
+java.util.concurrent.CompletionException: java.lang.IllegalArgumentException: Illegal character in path at index 19: file:///d:/OneDrive - Universidad Rafael Landivar/PRIMER CICLO 2023/INGENIER%C3%8DA DE SOFTWARE II/AkkaAPI
+	at java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:292)
+	at java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:308)
+	at java.util.concurrent.CompletableFuture.uniAccept(CompletableFuture.java:661)
+	at java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:646)
+	at java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:488)
+	at java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:1990)
+	at scala.concurrent.java8.FuturesConvertersImpl$CF.apply(FutureConvertersImpl.scala:29)
+	at scala.concurrent.java8.FuturesConvertersImpl$CF.apply(FutureConvertersImpl.scala:26)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:484)
+	at scala.concurrent.ExecutionContext$parasitic$.execute(ExecutionContext.scala:222)
+	at scala.concurrent.impl.Promise$Transformation.submitWithValue(Promise.scala:429)
+	at scala.concurrent.impl.Promise$DefaultPromise.submitWithValue(Promise.scala:338)
+	at scala.concurrent.impl.Promise$DefaultPromise.tryComplete0(Promise.scala:285)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:504)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+Caused by: java.lang.IllegalArgumentException: Illegal character in path at index 19: file:///d:/OneDrive - Universidad Rafael Landivar/PRIMER CICLO 2023/INGENIER%C3%8DA DE SOFTWARE II/AkkaAPI
+	at java.net.URI.create(URI.java:852)
+	at scala.meta.internal.mtags.MtagsEnrichments$XtensionStringMtags.toAbsolutePath(MtagsEnrichments.scala:158)
+	at scala.meta.internal.metals.MetalsEnrichments$XtensionString.toAbsolutePath(MetalsEnrichments.scala:609)
+	at scala.meta.internal.metals.MetalsEnrichments$XtensionString.toAbsolutePath(MetalsEnrichments.scala:606)
+	at scala.meta.internal.metals.MetalsLanguageServer.updateWorkspaceDirectory(MetalsLanguageServer.scala:365)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$initialize$2(MetalsLanguageServer.scala:879)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:678)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	... 3 more
+Caused by: java.net.URISyntaxException: Illegal character in path at index 19: file:///d:/OneDrive - Universidad Rafael Landivar/PRIMER CICLO 2023/INGENIER%C3%8DA DE SOFTWARE II/AkkaAPI
+	at java.net.URI$Parser.fail(URI.java:2845)
+	at java.net.URI$Parser.checkChars(URI.java:3018)
+	at java.net.URI$Parser.parseHierarchical(URI.java:3102)
+	at java.net.URI$Parser.parse(URI.java:3050)
+	at java.net.URI.<init>(URI.java:588)
+	at java.net.URI.create(URI.java:850)
+	... 10 more
+
+2023.02.14 22:56:36 INFO  tracing is disabled for protocol LSP, to enable tracing of incoming and outgoing JSON messages create an empty file at d:\OneDrive - Universidad Rafael Landivar\PRIMER CICLO 2023\INGENIERÍA DE SOFTWARE II\AkkaAPI\.metals\lsp.trace.json or C:\Users\andre\AppData\Local\scalameta\metals\cache\lsp.trace.json
+feb 14, 2023 10:56:56 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+GRAVE: Internal error: java.lang.IllegalArgumentException: Illegal character in path at index 19: file:///d:/OneDrive - Universidad Rafael Landivar/PRIMER CICLO 2023/INGENIER%C3%8DA DE SOFTWARE II/AkkaAPI
+java.util.concurrent.CompletionException: java.lang.IllegalArgumentException: Illegal character in path at index 19: file:///d:/OneDrive - Universidad Rafael Landivar/PRIMER CICLO 2023/INGENIER%C3%8DA DE SOFTWARE II/AkkaAPI
+	at java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:292)
+	at java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:308)
+	at java.util.concurrent.CompletableFuture.uniAccept(CompletableFuture.java:661)
+	at java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:646)
+	at java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:488)
+	at java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:1990)
+	at scala.concurrent.java8.FuturesConvertersImpl$CF.apply(FutureConvertersImpl.scala:29)
+	at scala.concurrent.java8.FuturesConvertersImpl$CF.apply(FutureConvertersImpl.scala:26)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:484)
+	at scala.concurrent.ExecutionContext$parasitic$.execute(ExecutionContext.scala:222)
+	at scala.concurrent.impl.Promise$Transformation.submitWithValue(Promise.scala:429)
+	at scala.concurrent.impl.Promise$DefaultPromise.submitWithValue(Promise.scala:338)
+	at scala.concurrent.impl.Promise$DefaultPromise.tryComplete0(Promise.scala:285)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:504)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+Caused by: java.lang.IllegalArgumentException: Illegal character in path at index 19: file:///d:/OneDrive - Universidad Rafael Landivar/PRIMER CICLO 2023/INGENIER%C3%8DA DE SOFTWARE II/AkkaAPI
+	at java.net.URI.create(URI.java:852)
+	at scala.meta.internal.mtags.MtagsEnrichments$XtensionStringMtags.toAbsolutePath(MtagsEnrichments.scala:158)
+	at scala.meta.internal.metals.MetalsEnrichments$XtensionString.toAbsolutePath(MetalsEnrichments.scala:609)
+	at scala.meta.internal.metals.MetalsEnrichments$XtensionString.toAbsolutePath(MetalsEnrichments.scala:606)
+	at scala.meta.internal.metals.MetalsLanguageServer.updateWorkspaceDirectory(MetalsLanguageServer.scala:365)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$initialize$2(MetalsLanguageServer.scala:879)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:678)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	... 3 more
+Caused by: java.net.URISyntaxException: Illegal character in path at index 19: file:///d:/OneDrive - Universidad Rafael Landivar/PRIMER CICLO 2023/INGENIER%C3%8DA DE SOFTWARE II/AkkaAPI
+	at java.net.URI$Parser.fail(URI.java:2845)
+	at java.net.URI$Parser.checkChars(URI.java:3018)
+	at java.net.URI$Parser.parseHierarchical(URI.java:3102)
+	at java.net.URI$Parser.parse(URI.java:3050)
+	at java.net.URI.<init>(URI.java:588)
+	at java.net.URI.create(URI.java:850)
+	... 10 more
+
+2023.02.14 22:57:29 INFO  tracing is disabled for protocol LSP, to enable tracing of incoming and outgoing JSON messages create an empty file at d:\OneDrive - Universidad Rafael Landivar\PRIMER CICLO 2023\INGENIERÍA DE SOFTWARE II\AkkaAPI\.metals\lsp.trace.json or C:\Users\andre\AppData\Local\scalameta\metals\cache\lsp.trace.json
+feb 14, 2023 10:57:48 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+GRAVE: Internal error: java.lang.IllegalArgumentException: Illegal character in path at index 19: file:///d:/OneDrive - Universidad Rafael Landivar/PRIMER CICLO 2023/INGENIER%C3%8DA DE SOFTWARE II/AkkaAPI
+java.util.concurrent.CompletionException: java.lang.IllegalArgumentException: Illegal character in path at index 19: file:///d:/OneDrive - Universidad Rafael Landivar/PRIMER CICLO 2023/INGENIER%C3%8DA DE SOFTWARE II/AkkaAPI
+	at java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:292)
+	at java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:308)
+	at java.util.concurrent.CompletableFuture.uniAccept(CompletableFuture.java:661)
+	at java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:646)
+	at java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:488)
+	at java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:1990)
+	at scala.concurrent.java8.FuturesConvertersImpl$CF.apply(FutureConvertersImpl.scala:29)
+	at scala.concurrent.java8.FuturesConvertersImpl$CF.apply(FutureConvertersImpl.scala:26)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:484)
+	at scala.concurrent.ExecutionContext$parasitic$.execute(ExecutionContext.scala:222)
+	at scala.concurrent.impl.Promise$Transformation.submitWithValue(Promise.scala:429)
+	at scala.concurrent.impl.Promise$DefaultPromise.submitWithValue(Promise.scala:338)
+	at scala.concurrent.impl.Promise$DefaultPromise.tryComplete0(Promise.scala:285)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:504)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+Caused by: java.lang.IllegalArgumentException: Illegal character in path at index 19: file:///d:/OneDrive - Universidad Rafael Landivar/PRIMER CICLO 2023/INGENIER%C3%8DA DE SOFTWARE II/AkkaAPI
+	at java.net.URI.create(URI.java:852)
+	at scala.meta.internal.mtags.MtagsEnrichments$XtensionStringMtags.toAbsolutePath(MtagsEnrichments.scala:158)
+	at scala.meta.internal.metals.MetalsEnrichments$XtensionString.toAbsolutePath(MetalsEnrichments.scala:609)
+	at scala.meta.internal.metals.MetalsEnrichments$XtensionString.toAbsolutePath(MetalsEnrichments.scala:606)
+	at scala.meta.internal.metals.MetalsLanguageServer.updateWorkspaceDirectory(MetalsLanguageServer.scala:365)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$initialize$2(MetalsLanguageServer.scala:879)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:678)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	... 3 more
+Caused by: java.net.URISyntaxException: Illegal character in path at index 19: file:///d:/OneDrive - Universidad Rafael Landivar/PRIMER CICLO 2023/INGENIER%C3%8DA DE SOFTWARE II/AkkaAPI
+	at java.net.URI$Parser.fail(URI.java:2845)
+	at java.net.URI$Parser.checkChars(URI.java:3018)
+	at java.net.URI$Parser.parseHierarchical(URI.java:3102)
+	at java.net.URI$Parser.parse(URI.java:3050)
+	at java.net.URI.<init>(URI.java:588)
+	at java.net.URI.create(URI.java:850)
+	... 10 more
+
+2023.02.14 22:58:09 INFO  tracing is disabled for protocol LSP, to enable tracing of incoming and outgoing JSON messages create an empty file at d:\OneDrive - Universidad Rafael Landivar\PRIMER CICLO 2023\INGENIERÍA DE SOFTWARE II\AkkaAPI\.metals\lsp.trace.json or C:\Users\andre\AppData\Local\scalameta\metals\cache\lsp.trace.json
+feb 14, 2023 10:58:26 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+GRAVE: Internal error: java.lang.IllegalArgumentException: Illegal character in path at index 19: file:///d:/OneDrive - Universidad Rafael Landivar/PRIMER CICLO 2023/INGENIER%C3%8DA DE SOFTWARE II/AkkaAPI
+java.util.concurrent.CompletionException: java.lang.IllegalArgumentException: Illegal character in path at index 19: file:///d:/OneDrive - Universidad Rafael Landivar/PRIMER CICLO 2023/INGENIER%C3%8DA DE SOFTWARE II/AkkaAPI
+	at java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:292)
+	at java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:308)
+	at java.util.concurrent.CompletableFuture.uniAccept(CompletableFuture.java:661)
+	at java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:646)
+	at java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:488)
+	at java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:1990)
+	at scala.concurrent.java8.FuturesConvertersImpl$CF.apply(FutureConvertersImpl.scala:29)
+	at scala.concurrent.java8.FuturesConvertersImpl$CF.apply(FutureConvertersImpl.scala:26)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:484)
+	at scala.concurrent.ExecutionContext$parasitic$.execute(ExecutionContext.scala:222)
+	at scala.concurrent.impl.Promise$Transformation.submitWithValue(Promise.scala:429)
+	at scala.concurrent.impl.Promise$DefaultPromise.submitWithValue(Promise.scala:338)
+	at scala.concurrent.impl.Promise$DefaultPromise.tryComplete0(Promise.scala:285)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:504)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+Caused by: java.lang.IllegalArgumentException: Illegal character in path at index 19: file:///d:/OneDrive - Universidad Rafael Landivar/PRIMER CICLO 2023/INGENIER%C3%8DA DE SOFTWARE II/AkkaAPI
+	at java.net.URI.create(URI.java:852)
+	at scala.meta.internal.mtags.MtagsEnrichments$XtensionStringMtags.toAbsolutePath(MtagsEnrichments.scala:158)
+	at scala.meta.internal.metals.MetalsEnrichments$XtensionString.toAbsolutePath(MetalsEnrichments.scala:609)
+	at scala.meta.internal.metals.MetalsEnrichments$XtensionString.toAbsolutePath(MetalsEnrichments.scala:606)
+	at scala.meta.internal.metals.MetalsLanguageServer.updateWorkspaceDirectory(MetalsLanguageServer.scala:365)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$initialize$2(MetalsLanguageServer.scala:879)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:678)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	... 3 more
+Caused by: java.net.URISyntaxException: Illegal character in path at index 19: file:///d:/OneDrive - Universidad Rafael Landivar/PRIMER CICLO 2023/INGENIER%C3%8DA DE SOFTWARE II/AkkaAPI
+	at java.net.URI$Parser.fail(URI.java:2845)
+	at java.net.URI$Parser.checkChars(URI.java:3018)
+	at java.net.URI$Parser.parseHierarchical(URI.java:3102)
+	at java.net.URI$Parser.parse(URI.java:3050)
+	at java.net.URI.<init>(URI.java:588)
+	at java.net.URI.create(URI.java:850)
+	... 10 more
+
+2023.02.14 22:59:26 INFO  tracing is disabled for protocol LSP, to enable tracing of incoming and outgoing JSON messages create an empty file at d:\OneDrive - Universidad Rafael Landivar\PRIMER CICLO 2023\INGENIERÍA DE SOFTWARE II\AkkaAPI\.metals\lsp.trace.json or C:\Users\andre\AppData\Local\scalameta\metals\cache\lsp.trace.json
+feb 14, 2023 10:59:46 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+GRAVE: Internal error: java.lang.IllegalArgumentException: Illegal character in path at index 19: file:///d:/OneDrive - Universidad Rafael Landivar/PRIMER CICLO 2023/INGENIER%C3%8DA DE SOFTWARE II/AkkaAPI
+java.util.concurrent.CompletionException: java.lang.IllegalArgumentException: Illegal character in path at index 19: file:///d:/OneDrive - Universidad Rafael Landivar/PRIMER CICLO 2023/INGENIER%C3%8DA DE SOFTWARE II/AkkaAPI
+	at java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:292)
+	at java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:308)
+	at java.util.concurrent.CompletableFuture.uniAccept(CompletableFuture.java:661)
+	at java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:646)
+	at java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:488)
+	at java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:1990)
+	at scala.concurrent.java8.FuturesConvertersImpl$CF.apply(FutureConvertersImpl.scala:29)
+	at scala.concurrent.java8.FuturesConvertersImpl$CF.apply(FutureConvertersImpl.scala:26)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:484)
+	at scala.concurrent.ExecutionContext$parasitic$.execute(ExecutionContext.scala:222)
+	at scala.concurrent.impl.Promise$Transformation.submitWithValue(Promise.scala:429)
+	at scala.concurrent.impl.Promise$DefaultPromise.submitWithValue(Promise.scala:338)
+	at scala.concurrent.impl.Promise$DefaultPromise.tryComplete0(Promise.scala:285)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:504)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+Caused by: java.lang.IllegalArgumentException: Illegal character in path at index 19: file:///d:/OneDrive - Universidad Rafael Landivar/PRIMER CICLO 2023/INGENIER%C3%8DA DE SOFTWARE II/AkkaAPI
+	at java.net.URI.create(URI.java:852)
+	at scala.meta.internal.mtags.MtagsEnrichments$XtensionStringMtags.toAbsolutePath(MtagsEnrichments.scala:158)
+	at scala.meta.internal.metals.MetalsEnrichments$XtensionString.toAbsolutePath(MetalsEnrichments.scala:609)
+	at scala.meta.internal.metals.MetalsEnrichments$XtensionString.toAbsolutePath(MetalsEnrichments.scala:606)
+	at scala.meta.internal.metals.MetalsLanguageServer.updateWorkspaceDirectory(MetalsLanguageServer.scala:365)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$initialize$2(MetalsLanguageServer.scala:879)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:678)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	... 3 more
+Caused by: java.net.URISyntaxException: Illegal character in path at index 19: file:///d:/OneDrive - Universidad Rafael Landivar/PRIMER CICLO 2023/INGENIER%C3%8DA DE SOFTWARE II/AkkaAPI
+	at java.net.URI$Parser.fail(URI.java:2845)
+	at java.net.URI$Parser.checkChars(URI.java:3018)
+	at java.net.URI$Parser.parseHierarchical(URI.java:3102)
+	at java.net.URI$Parser.parse(URI.java:3050)
+	at java.net.URI.<init>(URI.java:588)
+	at java.net.URI.create(URI.java:850)
+	... 10 more
+
+2023.02.14 23:00:07 INFO  tracing is disabled for protocol LSP, to enable tracing of incoming and outgoing JSON messages create an empty file at d:\OneDrive - Universidad Rafael Landivar\PRIMER CICLO 2023\INGENIERÍA DE SOFTWARE II\AkkaAPI\.metals\lsp.trace.json or C:\Users\andre\AppData\Local\scalameta\metals\cache\lsp.trace.json
+feb 14, 2023 11:00:22 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+GRAVE: Internal error: java.lang.IllegalArgumentException: Illegal character in path at index 19: file:///d:/OneDrive - Universidad Rafael Landivar/PRIMER CICLO 2023/INGENIER%C3%8DA DE SOFTWARE II/AkkaAPI
+java.util.concurrent.CompletionException: java.lang.IllegalArgumentException: Illegal character in path at index 19: file:///d:/OneDrive - Universidad Rafael Landivar/PRIMER CICLO 2023/INGENIER%C3%8DA DE SOFTWARE II/AkkaAPI
+	at java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:292)
+	at java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:308)
+	at java.util.concurrent.CompletableFuture.uniAccept(CompletableFuture.java:661)
+	at java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:646)
+	at java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:488)
+	at java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:1990)
+	at scala.concurrent.java8.FuturesConvertersImpl$CF.apply(FutureConvertersImpl.scala:29)
+	at scala.concurrent.java8.FuturesConvertersImpl$CF.apply(FutureConvertersImpl.scala:26)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:484)
+	at scala.concurrent.ExecutionContext$parasitic$.execute(ExecutionContext.scala:222)
+	at scala.concurrent.impl.Promise$Transformation.submitWithValue(Promise.scala:429)
+	at scala.concurrent.impl.Promise$DefaultPromise.submitWithValue(Promise.scala:338)
+	at scala.concurrent.impl.Promise$DefaultPromise.tryComplete0(Promise.scala:285)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:504)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+Caused by: java.lang.IllegalArgumentException: Illegal character in path at index 19: file:///d:/OneDrive - Universidad Rafael Landivar/PRIMER CICLO 2023/INGENIER%C3%8DA DE SOFTWARE II/AkkaAPI
+	at java.net.URI.create(URI.java:852)
+	at scala.meta.internal.mtags.MtagsEnrichments$XtensionStringMtags.toAbsolutePath(MtagsEnrichments.scala:158)
+	at scala.meta.internal.metals.MetalsEnrichments$XtensionString.toAbsolutePath(MetalsEnrichments.scala:609)
+	at scala.meta.internal.metals.MetalsEnrichments$XtensionString.toAbsolutePath(MetalsEnrichments.scala:606)
+	at scala.meta.internal.metals.MetalsLanguageServer.updateWorkspaceDirectory(MetalsLanguageServer.scala:365)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$initialize$2(MetalsLanguageServer.scala:879)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:678)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	... 3 more
+Caused by: java.net.URISyntaxException: Illegal character in path at index 19: file:///d:/OneDrive - Universidad Rafael Landivar/PRIMER CICLO 2023/INGENIER%C3%8DA DE SOFTWARE II/AkkaAPI
+	at java.net.URI$Parser.fail(URI.java:2845)
+	at java.net.URI$Parser.checkChars(URI.java:3018)
+	at java.net.URI$Parser.parseHierarchical(URI.java:3102)
+	at java.net.URI$Parser.parse(URI.java:3050)
+	at java.net.URI.<init>(URI.java:588)
+	at java.net.URI.create(URI.java:850)
+	... 10 more
+
+2023.02.14 23:00:47 INFO  tracing is disabled for protocol LSP, to enable tracing of incoming and outgoing JSON messages create an empty file at d:\OneDrive - Universidad Rafael Landivar\PRIMER CICLO 2023\INGENIERÍA DE SOFTWARE II\AkkaAPI\.metals\lsp.trace.json or C:\Users\andre\AppData\Local\scalameta\metals\cache\lsp.trace.json
+feb 14, 2023 11:01:06 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+GRAVE: Internal error: java.lang.IllegalArgumentException: Illegal character in path at index 19: file:///d:/OneDrive - Universidad Rafael Landivar/PRIMER CICLO 2023/INGENIER%C3%8DA DE SOFTWARE II/AkkaAPI
+java.util.concurrent.CompletionException: java.lang.IllegalArgumentException: Illegal character in path at index 19: file:///d:/OneDrive - Universidad Rafael Landivar/PRIMER CICLO 2023/INGENIER%C3%8DA DE SOFTWARE II/AkkaAPI
+	at java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:292)
+	at java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:308)
+	at java.util.concurrent.CompletableFuture.uniAccept(CompletableFuture.java:661)
+	at java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:646)
+	at java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:488)
+	at java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:1990)
+	at scala.concurrent.java8.FuturesConvertersImpl$CF.apply(FutureConvertersImpl.scala:29)
+	at scala.concurrent.java8.FuturesConvertersImpl$CF.apply(FutureConvertersImpl.scala:26)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:484)
+	at scala.concurrent.ExecutionContext$parasitic$.execute(ExecutionContext.scala:222)
+	at scala.concurrent.impl.Promise$Transformation.submitWithValue(Promise.scala:429)
+	at scala.concurrent.impl.Promise$DefaultPromise.submitWithValue(Promise.scala:338)
+	at scala.concurrent.impl.Promise$DefaultPromise.tryComplete0(Promise.scala:285)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:504)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+Caused by: java.lang.IllegalArgumentException: Illegal character in path at index 19: file:///d:/OneDrive - Universidad Rafael Landivar/PRIMER CICLO 2023/INGENIER%C3%8DA DE SOFTWARE II/AkkaAPI
+	at java.net.URI.create(URI.java:852)
+	at scala.meta.internal.mtags.MtagsEnrichments$XtensionStringMtags.toAbsolutePath(MtagsEnrichments.scala:158)
+	at scala.meta.internal.metals.MetalsEnrichments$XtensionString.toAbsolutePath(MetalsEnrichments.scala:609)
+	at scala.meta.internal.metals.MetalsEnrichments$XtensionString.toAbsolutePath(MetalsEnrichments.scala:606)
+	at scala.meta.internal.metals.MetalsLanguageServer.updateWorkspaceDirectory(MetalsLanguageServer.scala:365)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$initialize$2(MetalsLanguageServer.scala:879)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:678)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	... 3 more
+Caused by: java.net.URISyntaxException: Illegal character in path at index 19: file:///d:/OneDrive - Universidad Rafael Landivar/PRIMER CICLO 2023/INGENIER%C3%8DA DE SOFTWARE II/AkkaAPI
+	at java.net.URI$Parser.fail(URI.java:2845)
+	at java.net.URI$Parser.checkChars(URI.java:3018)
+	at java.net.URI$Parser.parseHierarchical(URI.java:3102)
+	at java.net.URI$Parser.parse(URI.java:3050)
+	at java.net.URI.<init>(URI.java:588)
+	at java.net.URI.create(URI.java:850)
+	... 10 more
+
+2023.02.14 23:01:31 INFO  tracing is disabled for protocol LSP, to enable tracing of incoming and outgoing JSON messages create an empty file at d:\OneDrive - Universidad Rafael Landivar\PRIMER CICLO 2023\INGENIERÍA DE SOFTWARE II\AkkaAPI\.metals\lsp.trace.json or C:\Users\andre\AppData\Local\scalameta\metals\cache\lsp.trace.json
+feb 14, 2023 11:01:50 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+GRAVE: Internal error: java.lang.IllegalArgumentException: Illegal character in path at index 19: file:///d:/OneDrive - Universidad Rafael Landivar/PRIMER CICLO 2023/INGENIER%C3%8DA DE SOFTWARE II/AkkaAPI
+java.util.concurrent.CompletionException: java.lang.IllegalArgumentException: Illegal character in path at index 19: file:///d:/OneDrive - Universidad Rafael Landivar/PRIMER CICLO 2023/INGENIER%C3%8DA DE SOFTWARE II/AkkaAPI
+	at java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:292)
+	at java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:308)
+	at java.util.concurrent.CompletableFuture.uniAccept(CompletableFuture.java:661)
+	at java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:646)
+	at java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:488)
+	at java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:1990)
+	at scala.concurrent.java8.FuturesConvertersImpl$CF.apply(FutureConvertersImpl.scala:29)
+	at scala.concurrent.java8.FuturesConvertersImpl$CF.apply(FutureConvertersImpl.scala:26)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:484)
+	at scala.concurrent.ExecutionContext$parasitic$.execute(ExecutionContext.scala:222)
+	at scala.concurrent.impl.Promise$Transformation.submitWithValue(Promise.scala:429)
+	at scala.concurrent.impl.Promise$DefaultPromise.submitWithValue(Promise.scala:338)
+	at scala.concurrent.impl.Promise$DefaultPromise.tryComplete0(Promise.scala:285)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:504)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+Caused by: java.lang.IllegalArgumentException: Illegal character in path at index 19: file:///d:/OneDrive - Universidad Rafael Landivar/PRIMER CICLO 2023/INGENIER%C3%8DA DE SOFTWARE II/AkkaAPI
+	at java.net.URI.create(URI.java:852)
+	at scala.meta.internal.mtags.MtagsEnrichments$XtensionStringMtags.toAbsolutePath(MtagsEnrichments.scala:158)
+	at scala.meta.internal.metals.MetalsEnrichments$XtensionString.toAbsolutePath(MetalsEnrichments.scala:609)
+	at scala.meta.internal.metals.MetalsEnrichments$XtensionString.toAbsolutePath(MetalsEnrichments.scala:606)
+	at scala.meta.internal.metals.MetalsLanguageServer.updateWorkspaceDirectory(MetalsLanguageServer.scala:365)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$initialize$2(MetalsLanguageServer.scala:879)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:678)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	... 3 more
+Caused by: java.net.URISyntaxException: Illegal character in path at index 19: file:///d:/OneDrive - Universidad Rafael Landivar/PRIMER CICLO 2023/INGENIER%C3%8DA DE SOFTWARE II/AkkaAPI
+	at java.net.URI$Parser.fail(URI.java:2845)
+	at java.net.URI$Parser.checkChars(URI.java:3018)
+	at java.net.URI$Parser.parseHierarchical(URI.java:3102)
+	at java.net.URI$Parser.parse(URI.java:3050)
+	at java.net.URI.<init>(URI.java:588)
+	at java.net.URI.create(URI.java:850)
+	... 10 more
+
+2023.02.14 23:02:15 INFO  tracing is disabled for protocol LSP, to enable tracing of incoming and outgoing JSON messages create an empty file at d:\OneDrive - Universidad Rafael Landivar\PRIMER CICLO 2023\INGENIERÍA DE SOFTWARE II\AkkaAPI\.metals\lsp.trace.json or C:\Users\andre\AppData\Local\scalameta\metals\cache\lsp.trace.json
+feb 14, 2023 11:02:28 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+GRAVE: Internal error: java.lang.IllegalArgumentException: Illegal character in path at index 19: file:///d:/OneDrive - Universidad Rafael Landivar/PRIMER CICLO 2023/INGENIER%C3%8DA DE SOFTWARE II/AkkaAPI
+java.util.concurrent.CompletionException: java.lang.IllegalArgumentException: Illegal character in path at index 19: file:///d:/OneDrive - Universidad Rafael Landivar/PRIMER CICLO 2023/INGENIER%C3%8DA DE SOFTWARE II/AkkaAPI
+	at java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:292)
+	at java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:308)
+	at java.util.concurrent.CompletableFuture.uniAccept(CompletableFuture.java:661)
+	at java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:646)
+	at java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:488)
+	at java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:1990)
+	at scala.concurrent.java8.FuturesConvertersImpl$CF.apply(FutureConvertersImpl.scala:29)
+	at scala.concurrent.java8.FuturesConvertersImpl$CF.apply(FutureConvertersImpl.scala:26)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:484)
+	at scala.concurrent.ExecutionContext$parasitic$.execute(ExecutionContext.scala:222)
+	at scala.concurrent.impl.Promise$Transformation.submitWithValue(Promise.scala:429)
+	at scala.concurrent.impl.Promise$DefaultPromise.submitWithValue(Promise.scala:338)
+	at scala.concurrent.impl.Promise$DefaultPromise.tryComplete0(Promise.scala:285)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:504)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+Caused by: java.lang.IllegalArgumentException: Illegal character in path at index 19: file:///d:/OneDrive - Universidad Rafael Landivar/PRIMER CICLO 2023/INGENIER%C3%8DA DE SOFTWARE II/AkkaAPI
+	at java.net.URI.create(URI.java:852)
+	at scala.meta.internal.mtags.MtagsEnrichments$XtensionStringMtags.toAbsolutePath(MtagsEnrichments.scala:158)
+	at scala.meta.internal.metals.MetalsEnrichments$XtensionString.toAbsolutePath(MetalsEnrichments.scala:609)
+	at scala.meta.internal.metals.MetalsEnrichments$XtensionString.toAbsolutePath(MetalsEnrichments.scala:606)
+	at scala.meta.internal.metals.MetalsLanguageServer.updateWorkspaceDirectory(MetalsLanguageServer.scala:365)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$initialize$2(MetalsLanguageServer.scala:879)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:678)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	... 3 more
+Caused by: java.net.URISyntaxException: Illegal character in path at index 19: file:///d:/OneDrive - Universidad Rafael Landivar/PRIMER CICLO 2023/INGENIER%C3%8DA DE SOFTWARE II/AkkaAPI
+	at java.net.URI$Parser.fail(URI.java:2845)
+	at java.net.URI$Parser.checkChars(URI.java:3018)
+	at java.net.URI$Parser.parseHierarchical(URI.java:3102)
+	at java.net.URI$Parser.parse(URI.java:3050)
+	at java.net.URI.<init>(URI.java:588)
+	at java.net.URI.create(URI.java:850)
+	... 10 more
+
